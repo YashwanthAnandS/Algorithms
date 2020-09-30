@@ -1,5 +1,7 @@
 package com.yash.upgrad;
 
+import java.util.Scanner;
+
 public class LinearSearch {
     // This function returns index of element x in arr[]
     public static int search(int arr[], int n, int x) {
@@ -15,10 +17,14 @@ public class LinearSearch {
     }
 
     public static void main(String[] args) {
-        int[] arr = {3, 4, 1, 7, 5};
-        int n = arr.length;
-
-        int x = 4;
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = input.nextInt();
+        }
+        int x = input.nextInt();
+        input.close();
 
         int index = search(arr, n, x);
         if (index == -1)
