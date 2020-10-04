@@ -1,4 +1,4 @@
-package com.yash.upgrad;
+package com.yash.Searching;
 
 import java.util.Scanner;
 
